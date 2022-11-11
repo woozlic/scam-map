@@ -1,0 +1,15 @@
+version: '3'
+services:
+  database:
+    env_file:
+      - .env
+    image: 'mongo'
+    container_name: 'scam-mongo'
+    environment:
+      - MONGO_INITDB_DATABASE=scam
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_USER}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_PASSWORD}
+    volumes:
+      - ./mongo-volume:/data/db
+    ports:
+      - '27017-27019:27017-27019'
