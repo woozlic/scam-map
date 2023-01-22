@@ -13,3 +13,15 @@ services:
       - ./mongo-volume:/data/db
     ports:
       - '27017-27019:27017-27019'
+  api_service:
+    restart: always
+    networks:
+      - default
+    container_name: api_service
+#    build:
+#      context: "src"
+#      dockerfile: "api/Dockerfile"
+#    expose:
+#      - "8080"
+    ports:
+      - "80:80"
