@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "SCAM Map",
+  "description": "Проверка сайта на возможность обмана пользователя",
+  "version": "1.0.0",
+  "icons": {
+    "16": "img/scam16.png",
+    "24": "img/scam24.png",
+    "64": "img/scam64.png",
+    "128": "img/scam128.png"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/"],
+      "css": ["style.css"],
+      "js": ["app.js"]
+    }
+  ],
+  "permissions": ["activeTab", "scripting", "storage"]
+}

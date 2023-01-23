@@ -1,0 +1,65 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  color: #000000;
+  outline: 0;
+  text-decoration: none;
+}
+
+.modal-header {
+  width: 410px;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid #dadada; 
+}
+
+.modal-header>* {
+  display: block;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.logo-icon {
+  padding: 16px;
+}
+
+.modal-content {
+  padding: 0 16px;
+  margin-top: 16px;
+}
+
+.modal-content>* {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.content-scan {
+  justify-content: space-between;
+}
+
+.scan-switcher {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 185px;
+}
+
+.switcher-checker {
+  width: 6px;
+  height: 6px;
+  padding: 4px;
+  border-radius: 100%;
+  margin-right: 4px;
+  background-color: red;
+}
+
+.switcher-checker:active {
+  opacity: 0.8;
+}
+
